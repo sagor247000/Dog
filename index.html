@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Design</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+/* Navbar */
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Layout */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #34495e;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #1abc9c;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Button */
+.btn {
+    padding: 10px;
+    border: none;
+    background: #1abc9c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #16a085;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>My Dashboard</h2>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="#">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Messages</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="content">
+        <h2>Welcome</h2>
+
+        <div class="card">
+            <h3>Users</h3>
+            <p>1200</p>
+            <button class="btn">View</button>
+        </div>
+
+        <div class="card">
+            <h3>Orders</h3>
+            <p>350</p>
+            <button class="btn">View</button>
+        </div>
+
+        <div class="card">
+            <h3>Revenue</h3>
+            <p>$5000</p>
+            <button class="btn">View</button>
+        </div>
+
+        <div class="card">
+            <h3>Reports</h3>
+            <p>15</p>
+            <button class="btn">View</button>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>© 2026 My Website</p>
+</div>
+
+</body>
+</html>
